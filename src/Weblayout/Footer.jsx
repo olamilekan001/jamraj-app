@@ -8,8 +8,27 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { pageLinks } from "../data";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { GoArrowUp } from "react-icons/go";
+import { useState, useEffect } from "react";
 
 const Footer = () => {
+  const [visible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="bg-dark-radial bg-dark section-padding">
       <div className="lg:flex items-center justify-between">
@@ -132,14 +151,19 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="lg:flex justify-center back-to-top">
-        <button className="btn-3 bg-[rgb(14,239,29)] rounded-[50%]  btn">
-          <i className="text-2xl">
-            {" "}
-            <GoArrowUp className="text-white cursor-pointer text-center" />
-          </i>
-        </button>
-      </div>
+      {visible && (
+        <div className="lg:flex justify-center back-to-top">
+          <button
+            className="btn-3 bg-[rgb(14,239,29)] rounded-[50%]  btn"
+            onClick={handleScroll}
+          >
+            <i className="text-2xl">
+              {" "}
+              <GoArrowUp className="text-white cursor-pointer text-center" />
+            </i>
+          </button>
+        </div>
+      )}
     </section>
   );
 };

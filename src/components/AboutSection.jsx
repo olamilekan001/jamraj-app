@@ -11,7 +11,7 @@ const AboutSection = () => {
             We are among <span className="text-[rgb(14,239,29)]">the Leaders</span> in
             Construction Business
           </h1>
-          <p className="text-start custom-space text-[rgb(119,119,119)]">
+          <p className="text-start custom-space text-[rgb(119,119,119)] para">
             At Jamraj Builders Construction Company, we believe that every great
             investment begins with a confident first step, and this week could
             be yours. Imagine this the home you’ve dreamed of, the property that
@@ -54,7 +54,7 @@ const AboutSection = () => {
               </p>
             </div>
           </div>
-          <p className="custom-space text-[rgb(119,119,119)]">
+          <p className="custom-space text-[rgb(119,119,119)] para">
             We are not just about properties; we are about people. Our
             commitment to you is unwavering. We promise to listen, to
             understand, and to act in your best interest. We promise to provide

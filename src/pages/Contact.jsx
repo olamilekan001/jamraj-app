@@ -1,12 +1,29 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 import ContactUsSection from "../components/ContactUsSection";
+import PreloaderPage from "../components/PreloaderPage";
 
 const Contact = () => {
+  const [loading, setloading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setloading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      <Banner />
-      <ContactUsSection />
+      {loading ? (
+        <PreloaderPage />
+      ) : (
+        <>
+          <Banner />
+          <ContactUsSection />
+        </>
+      )}
     </>
   );
 };
