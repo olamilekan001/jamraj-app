@@ -6,9 +6,9 @@ import { BsPhoneVibrate } from "react-icons/bs";
 const TopNav = () => {
   return (
     <>
-      <div className="lg:flex items-center gap-[3rem] h-[8rem] justify-evenly hidden">
+      <div className="lg:flex lg:items-center lg:gap-[3rem] lg:h-[8rem] lg:justify-evenly topMar">
         <div className="inline-flex items-center gap-3 pt-[1rem] bo">
-          <i className="text-5xl text-green-400 font-semibold">
+          <i className="text-5xl text-red-500 font-semibold">
             <SlLocationPin />
           </i>
           <div className="flex flex-col gap-3">
@@ -22,7 +22,7 @@ const TopNav = () => {
           </div>
         </div>
         <div className="inline-flex items-center gap-3 pt-[1rem]">
-          <i className="text-5xl text-green-400 font-semibold">
+          <i className="text-5xl text-red-500 font-semibold">
             <HiOutlineMailOpen />
           </i>
           <div className="flex flex-col gap-3">
@@ -35,7 +35,7 @@ const TopNav = () => {
           </div>
         </div>
         <div className="inline-flex items-center gap-3 pt-[1rem]">
-          <i className="text-5xl text-green-400 font-semibold">
+          <i className="text-5xl text-red-500 font-semibold">
             <BsPhoneVibrate />
           </i>
           <div className="flex flex-col gap-3">

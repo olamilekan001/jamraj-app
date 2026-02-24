@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.jpeg";
+import logo from "../assets/images/logo-2.jpeg";
 import { pageLinks } from "../data";
 import { Link, NavLink } from "react-router-dom";
-import { FaArrowRightLong } from "react-icons/fa6";
+// import { FaArrowRightLong } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
             className="lg:hidden cursor-pointer border menu-button text-dark rounded"
             onClick={handleMenu}
           >
-            <i className="text-3xl text-amber-50">
+            <i className="text-3xl text-red-500">
               <CiMenuBurger />
             </i>
           </button>
@@ -36,21 +36,21 @@ const Header = () => {
           {pageLinks.map(({ id, path, text }) => (
             <div
               key={id}
-              className="uppercase text-[rgb(14,239,29)] hover:text-white  nav-link pb-5 flex"
+              className="uppercase text-[rgba(239,213,14,0.89)] hover:text-green-500  nav-link pb-5 flex"
             >
               <NavLink to={path} className={`btn-2`}>
                 {text}
               </NavLink>
             </div>
           ))}
-          <a
+          {/* <a
             href="https://www.instagram.com/jamrajbuilders?igsh=eW9xeDAyNHFlMmtk&utm_source=ig_contact_invite"
             target="_blank"
-            className="btn bg-[#0eef1d] text-white rounded-xl flex items-center gap-1 uppercase cursor-pointer"
+            className="btn bg-[rgba(239,213,14,0.89)] text-[rgba(175,14,239,0.89)] rounded-xl flex items-center gap-1 uppercase cursor-pointer"
           >
             Get a Quote
             <FaArrowRightLong />
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>

@@ -114,7 +114,7 @@ body {
 
 .menu-button {
   padding: 8px 16px;
-  border: 2px solid gray;
+  border: 2px solid red;
 }
 
 .social {
@@ -128,11 +128,12 @@ body {
 }
 
 .custom-space-3 {
-  margin-left: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .custom-space-4 {
-  margin: 10rem 2rem;
+  margin: 5rem 0;
   padding: 4rem 0;
 }
 .custom-space-5 {
@@ -156,11 +157,15 @@ body {
   width: 26rem;
 }
 .section-padding {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.5rem;
+  padding-right: 3.5rem;
 }
 
 .custom-space-2 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer-shape::before {
@@ -208,7 +213,7 @@ body {
 .portfolio-item {
   margin-bottom: 60px;
 }
-
+/* 
 .portfolio-btn {
   position: absolute;
   display: inline-block;
@@ -222,13 +227,13 @@ body {
   transition-delay: 0.3s;
   z-index: 2;
   opacity: 0;
-}
+} */
 
 .portfolio-item:hover .portfolio-btn {
   opacity: 1;
 }
 
-.portfolio-box::before,
+/* .portfolio-box::before,
 .portfolio-box::after {
   position: absolute;
   content: "";
@@ -238,9 +243,9 @@ body {
   transition: 0.5s;
   z-index: 1;
   background: rgba(4, 15, 40, 0.7);
-}
+} */
 
-.portfolio-box::before {
+/* .portfolio-box::before {
   left: 0;
 }
 
@@ -256,7 +261,7 @@ body {
 .portfolio-item:hover .portfolio-box::after {
   right: 0;
   width: 50%;
-}
+} */
 
 .back-to-top {
   position: fixed;
@@ -363,6 +368,11 @@ body {
   height: 100px;
   border-radius: 50%;
   animation: pulse 2s linear infinite;
+}
+
+.topMar {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 @keyframes pulse {

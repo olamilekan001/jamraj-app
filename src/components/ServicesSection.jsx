@@ -67,8 +67,8 @@ const services = [
 const ServicesSection = () => {
   return (
     <section className="custom-space-4">
-      <div className="text-center text-5xl font-bold custom-space-2">
-        <h1>WE PROVIDE <span className="text-[rgb(14,239,29)] leading-16">THE BEST</span> <br/> CONSTRUCTION SERVICES</h1>
+      <div className="lg:text-center lg:text-5xl text-start text-[37px] font-bold custom-space-2">
+        <h1>WE PROVIDE <span className="text-[rgb(239,14,14)] leading-16">THE BEST</span> <br/> CONSTRUCTION SERVICES</h1>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-8">
@@ -80,14 +80,14 @@ const ServicesSection = () => {
             >
               <img src={img} alt="" />
               <div className="service-icon bg-white">
-                <i className="text-5xl text-[rgb(14,239,29)]">{icon}</i>
+                <i className="text-5xl text-[rgb(239,14,14)]">{icon}</i>
               </div>
               <div>
                 <h4 className="font-bold text-2xl">{title}</h4>
                 <p className="text-start leading-6  text-[rgb(119,119,119)]">{text}</p>
                 <a
                   href=""
-                  className="flex items-center text-center justify-center text-[rgb(14,239,29)] mt-4"
+                  className="flex items-center text-center justify-center text-[rgb(239,14,14)] mt-4"
                 >
                   READ MORE <FaArrowRightLong />
                 </a>

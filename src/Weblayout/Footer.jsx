@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.jpeg";
+import logo from "../assets/images/logo-2.jpeg";
 import { Link, NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
@@ -55,14 +55,14 @@ const Footer = () => {
             <a
               href="https://web.facebook.com/profile.php?id=61579927739312"
               target="_blank"
-              className="text-xl bg-[#0eef1d] social text-amber-50 custom-space  btn-lg-square btn btn-lg"
+              className="text-xl bg-[rgb(239,14,14)] social text-amber-50 custom-space  btn-lg-square btn btn-lg"
             >
               <FaFacebookF />
             </a>
             <a
               href="https://www.instagram.com/jamrajbuilders?igsh=eW9xeDAyNHFlMmtk&utm_source=ig_contact_invite"
               target="_blank"
-              className="text-xl bg-[#0eef1d] social text-amber-50 custom-space  btn-lg-square btn btn-lg"
+              className="text-xl bg-[rgb(239,14,14)] social text-amber-50 custom-space  btn-lg-square btn btn-lg"
             >
               <FaInstagram />
             </a>
@@ -120,7 +120,7 @@ const Footer = () => {
                   placeholder={`Your Email Address`}
                   className="input placeholder:text-gray-400 bg-amber-50 outline-0"
                 />
-                <button className="bg-[#0eef1d] rounded-r-xl rounded-br-xl uppercase btn-2 text-white font-medium">
+                <button className="bg-[rgb(239,14,14)] rounded-r-xl rounded-br-xl uppercase btn-2 text-white font-medium">
                   subscribe
                 </button>
               </div>
@@ -133,14 +133,14 @@ const Footer = () => {
         <div>
           <p className="footer-name text-white">
             &copy;
-            <Link to={"/"} className="text-[rgb(14,239,29)]">
+            <Link to={"/"} className="text-[rgb(239,14,14)]">
               jamraj-builders.com.ng
             </Link>
             All Right Reserved
           </p>
         </div>
 
-        <div className="footer-shape relative bg-[rgb(14,239,29)]">
+        <div className="footer-shape relative bg-[rgb(239,14,14)]">
           <p className="footer-name text-white">
             Designed by
             <a href="" className="text-black">
@@ -154,7 +154,7 @@ const Footer = () => {
       {visible && (
         <div className="lg:flex justify-center back-to-top">
           <button
-            className="btn-3 bg-[rgb(14,239,29)] rounded-[50%]  btn"
+            className="btn-3 bg-[rgb(239,14,14)] rounded-[50%]  btn"
             onClick={handleScroll}
           >
             <i className="text-2xl">

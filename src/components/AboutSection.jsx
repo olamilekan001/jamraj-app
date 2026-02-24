@@ -1,17 +1,21 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import aboutImg from "../assets/images/img-2.jpeg";
+import aboutImg from "../assets/images/img-26.jpeg";
 
 const AboutSection = () => {
   return (
     <section className="section-space custom-space-3">
-      <div className="grid lg:grid-cols-2 lg:gap-50">
+      <div>
+        <h1 className="uppercase text-start text-[35px] font-semibold mb-2.5 sm:text-center sm:text-[37px]">
+          We are among{" "}
+          <span className="text-[rgb(239,14,14)]">the Leaders</span> in
+          Construction Business
+        </h1>
+      </div>
+     <div className="lg:flex lg:flex-1 gap-5">
+     <div>
         <div>
-          <h1 className="uppercase text-start text-[37px] font-semibold mb-2.5">
-            We are among <span className="text-[rgb(14,239,29)]">the Leaders</span> in
-            Construction Business
-          </h1>
-          <p className="text-start custom-space text-[rgb(119,119,119)] para">
+          <p className="text-start text-[18px] custom-space text-[rgb(119,119,119)]">
             At Jamraj Builders Construction Company, we believe that every great
             investment begins with a confident first step, and this week could
             be yours. Imagine this the home you’ve dreamed of, the property that
@@ -27,34 +31,34 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2">
             <div>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Indigenous Real Estate
               </p>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Property Sales & Management
               </p>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Property Lease & Broker
               </p>
             </div>
             <div>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Perfect Planning
               </p>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Facility Management
               </p>
               <p className="flex items-center gap-3 text-[rgb(119,119,119)]">
-                <FaCheck className="text-[rgb(14,239,29)]" />
+                <FaCheck className="text-[rgb(239,14,14)]" />
                 Procurements & Logistics
               </p>
             </div>
           </div>
-          <p className="custom-space text-[rgb(119,119,119)] para">
+          <p className="custom-space text-[rgb(119,119,119)] text-[18px]">
             We are not just about properties; we are about people. Our
             commitment to you is unwavering. We promise to listen, to
             understand, and to act in your best interest. We promise to provide
@@ -63,17 +67,18 @@ const AboutSection = () => {
             for all the tomorrows that follow.
           </p>
         </div>
+      </div>
 
-        <div className="custom-space-3">
-          <div className="relative bg-dark-radial h-140 w-100 z-10">
-            <img
-              src={aboutImg}
-              alt="about"
-              className="absolute w-100 h-140 top-10 right-10"
-            />
-          </div>
+      <div className="custom-space-3">
+        <div className="relative bg-dark-radial h-140 w-80 z-10 lg:h-140 lg:w-100 lg:z-10">
+          <img
+            src={aboutImg}
+            alt="about"
+            className="absolute w-100 h-140 top-10 right-10"
+          />
         </div>
       </div>
+     </div>
     </section>
   );
 };

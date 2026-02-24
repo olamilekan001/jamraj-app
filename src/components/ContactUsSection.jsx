@@ -5,8 +5,8 @@ const ContactUsSection = () => {
     <section className="bg-[#F4F6F8] z-40">
       <div className="sm:flex custom-space-4 flex-col">
         <div className="text-center">
-          <h1 className="uppercase text-[37px] font-semibold mb-2.5 text-center custom-space-2">
-            Please <span className="text-[rgb(14,239,29)]">Feel Free</span> To{" "}
+          <h1 className="uppercase lg:text-[37px] font-semibold mb-2.5 lg:text-center custom-space-2 text-2xl">
+            Please <span className="text-[rgb(239,14,14)]">Feel Free</span> To{" "}
             <br />
             drop your inquiries & <br /> comment.
           </h1>
@@ -63,7 +63,7 @@ const ContactUsSection = () => {
                 <div>
                   <button
                     type="submit"
-                    className="uppercase text-white font-semibold input-3 bg-[rgb(14,239,29)] rounded-2xl cursor-pointer"
+                    className="uppercase text-white font-semibold input-3 bg-[rgb(239,14,14)] rounded-2xl cursor-pointer"
                   >
                     Send Message
                   </button>
